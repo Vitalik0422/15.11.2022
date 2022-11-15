@@ -1,0 +1,91 @@
+
+body > header > div {
+    width: auto;
+    height: 72px;
+    background: linear-gradient(180deg, black 60%, blue 40%);
+}
+main {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body > main > div.nav-menu {
+    width: 200px;
+    height: 100vh;
+    margin: 20px;
+    background-color: yellow;
+}
+body > main > .content{
+    width: 920px;
+    height: auto;
+    margin: 20px;
+}
+
+body > main > div.content > div.hero {
+    width: 920px;
+    height: 500px;
+    background-color: gray;
+}
+
+body > main > div.content > div.history{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+body > main > div.content > div.history > div {
+    width: 150px;
+    height: 150px;
+    border: 2px solid blue;
+}
+
+@media only screen and (max-width: 1200px) {
+    main{
+        width: 768px;
+    }
+    body > main > div.nav-menu {
+        width: 768px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    body > main > .content {
+        width: 768px;
+        height: auto;
+        margin: 20px;
+    }
+    body > main > div.content > div.hero {
+        width: 768px;
+        height: 500px;
+    }
+    body > main > div.content > div.history > div {
+        width: 129px;
+        height: 100px;  
+    }
+}
+@media only screen and (max-width: 768px) {
+    main {
+        width: 500px;
+    }
+    body > main > div.nav-menu {
+        width: 500px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    body > main > div.content {
+        width: 500px;
+        height: auto;
+        margin: 20px;
+    }
+    body > main > div.content > div.hero {
+        display:none
+    }
+    body > main > div.content > div.history > div {
+        width: 200px;
+        height: 100px;
+        margin-bottom: 10px;
+
+    }
+}
